@@ -20,6 +20,9 @@
         const age = 75;
         const isHoliday = true;
         
+        if (isHoliday) {
+        console.log('no discounts')
+    } else {
         if (age <= 6 && age >= 0) {
             console.log('Discount')
         } else if (age >= 65 && age <= 120) {
@@ -27,6 +30,7 @@
         } else {
             console.log('no discount')
         }
+    }
 
         
     </script>
