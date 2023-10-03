@@ -16,7 +16,13 @@
     <button
       onclick="
     cartQuantity ++;
+    if  (cartQuantity <= 10 && cartQuantity >= 0) {
     console.log(`Cart quantity: ${cartQuantity}`);
+  } else if (cartQuantity < 0) {
+    alert('cartQuantity is too low');
+  } else if (cartQuantity > 10) {
+    alert('cart is full')
+  }
     "
     >
       Add to Cart
@@ -25,7 +31,13 @@
     <button
       onclick="
     cartQuantity += 2;
+    if  (cartQuantity <= 10 && cartQuantity >= 0) {
     console.log(`Cart quantity: ${cartQuantity}`);
+  } else if (cartQuantity < 0) {
+    alert('cartQuantity is too low');
+  } else if (cartQuantity > 10) {
+    alert('cart is full')
+  }
     "
     >
       +2
@@ -34,7 +46,13 @@
     <button
       onclick="
     cartQuantity += 3;
+    if  (cartQuantity <= 10 && cartQuantity >= 0) {
     console.log(`Cart quantity: ${cartQuantity}`);
+  } else if (cartQuantity < 0) {
+    alert('cartQuantity is too low');
+  } else if (cartQuantity > 10) {
+    alert('cart is full')
+  }
     "
     >
       +3
@@ -43,7 +61,13 @@
     <button
       onclick="
     cartQuantity --;
+    if (cartQuantity <= 10 && cartQuantity >= 0) {
     console.log(`Cart quantity: ${cartQuantity}`);
+  } else if (cartQuantity < 0) {
+    alert('cartQuantity is too low');
+  } else if (cartQuantity > 10) {
+    alert('cart is full')
+  }
     "
     > 
       Remove Cart
@@ -57,6 +81,10 @@
 
     <script>
       let cartQuantity = 0;
+
+      if (cartQuantity <= 10) {
+
+      }
     </script>
   </body>
 </html>
