@@ -6,12 +6,19 @@
 </head>
 <body>
     <script>
-        function convertToFahrenheit(celsius) {
-            fahrenheit = (celsius * 9/5) + 32;
-            console.log(fahrenheit);
+        // function convertToFahrenheit(celsius) {
+        //     fahrenheit = (celsius * 9/5) + 32;
+        //     console.log(fahrenheit);
+        // }
+
+        // convertToFahrenheit(25);
+
+        function convertToCelsius(fahrenheit) {
+            celsius = (fahrenheit - 32) * 5/9;
+            console.log(celsius)
         }
 
-        convertToFahrenheit(25);
+        convertToCelsius(86);
     </script>
 </body>
 </html>
