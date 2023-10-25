@@ -5,12 +5,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="heads" onclick="">heads</button>
-    <button class="tails">tails</button>
+    <button class="heads" onclick="choice('heads')">heads</button>
+    <button class="tails" onclick="choice('tails')">tails</button>
+    <p class="choice"></p>
     <script>
-        const head = document.querySelector('.heads')
-        function choice() {
-            if ()
+        //const head = document.querySelector('.heads')
+        function choice(choice) {
+            if (choice === 'heads') {
+               document.querySelector('.choice').innerHTML = 'You chose Heads';
+            } else if (choice === 'tails') {
+                document.querySelector('.choice').innerHTML = 'You chose Tails'
+            }
         }
     </script>
 </body>
